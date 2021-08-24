@@ -1,0 +1,356 @@
+@import '../_custom-variables/pages';
+* {
+    scrollbar-width: thin;
+    scrollbar-color: red;
+}
+
+
+
+.custom-login {
+    background: #f7f0eb;
+    color: #fff;
+
+    a {
+        color: #68b8bd;
+
+        &:hover {
+            color: #8dd4da;
+        }
+    }
+    
+    
+    .authentication-wrapper {
+        position: relative;
+        padding: 3%;
+        height: 100vh;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background: url("/img/login/leaf.png") center center no-repeat;
+            background-size: cover;
+            z-index: 2;
+            width: 20%;
+            height: 36%;
+        }
+
+        &::before {
+            left: -10%;
+            bottom: 10%;
+        }
+
+        .leaf {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            overflow: hidden;
+
+            &::before, &::after {
+                position: absolute;
+                content: "";
+                background: url("/img/login/leaf.png") center center no-repeat;
+                background-size: cover;
+                z-index: 2;
+                width: 20%;
+                height: 36%;
+            }
+
+            &::before {
+                left: 45%;
+                top: -20%;
+                transform: scaleY(-1);
+            }
+    
+            &::after {
+                right: -10%;
+                bottom: -10%;
+                transform: scaleX(-1);
+            }
+        }
+
+        .authentication-inner {
+            position: relative;
+            background: #045257; 
+            overflow: hidden;
+            box-shadow: 0px 60px 70px -25px rgba(0,0,0, 0.6);
+            overflow: hidden;
+
+            // &:before {
+            //     position: absolute;
+            //     content: "";
+            //     height: 100%;
+            //     width: 100%;
+            //     background: url(../img/login/bg-tech.png) left bottom no-repeat;
+            //     background-size: contain;
+            // }
+
+            .theme-bg-white {
+                background-color: #045257 !important;
+            }
+
+            .ui-bg-cover {
+                // border-radius: 20px;
+                // overflow: hidden;
+
+                .logo-jabar {
+                    position: relative;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 20px;
+
+                    img {
+                        width: 100px;
+                        height: auto;
+                    }
+                }
+                
+
+                .ui-bg-overlay {
+                   background-image: linear-gradient(200deg, #0a5523 0%,  #052b11 100%) !important;
+                }
+
+                .ui-bg-text {
+                    position: relative;
+                    
+                    // &::before, &::after {
+                    //     position: absolute;
+                    //     content: "";
+                    //     width: 100%;
+                    //     height: 150px;
+                    //     left: 0;
+                    // }
+
+                    // &::before {
+                    //     background: url(../img/login/line-top.png) center center no-repeat;
+                    //     bottom: 100%;
+                    // }
+
+                    // &::after {
+                    //     background: url(../img/login/line-bottom.png) center center no-repeat;
+                    //     top: 100%;
+                    // }
+                }
+            }
+
+            .ui-bg-form {
+                position: relative;
+
+                .form-control {
+                    border-radius: 30px;
+                    background-color: rgba(255,255,255,0.05);
+					border: 1px solid rgba(255,255,255,0.15);
+					color: #fff;
+                    
+                    &:focus {
+                        border-color: #f6efea;
+                    }
+                }
+
+                .box-4vm {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 30px;
+
+                    a {
+                        width: 100px;
+                        margin-left: 10px;
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+
+                .box-jabar {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 30px;
+
+                    .logo-jabar-footer {
+                        width: 50px;
+                        margin-right: 10px;
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+
+            .btn-primary {
+                background: #fff;
+                color: #045257;
+                border-radius: 30px;
+            }
+
+            // .ui-bg-form {
+            //     padding-bottom: 100px !important;
+            // }
+
+            .ui-form {
+                position: relative;
+                height: 100%;
+                overflow: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    .custom-login {
+        .authentication-wrapper {
+            &::before {
+                width: 250px;
+                height: 250px;
+                left: -15%;
+            }
+
+            .leaf {
+                &::before,  &::after {
+                    width: 300px;
+                    height: 300px;
+                }
+
+                &::before {
+                    left: 30%;
+                }
+
+                &::after {
+                    right: -15%;
+                    bottom: -15%;
+                }
+            }
+
+            .authentication-inner {
+                .ui-bg-form {
+                    .ui-form {
+                        .w-75 {
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .custom-login {
+        .authentication-wrapper {
+
+            &::before {
+               display: none;
+            }
+           
+            .leaf {
+                &::before,  &::after {
+                    width: 300px;
+                    height: 300px;
+                }
+                
+                &::before {
+                    top: -15%;
+                    left: -15%;
+                }
+
+                &::after {
+                    right: -15%;
+                    bottom: -15%;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .custom-login {
+        .authentication-wrapper {
+
+            .leaf {
+                &::before,  &::after {
+                    width: 150px;
+                    height: 150px;
+                }
+               
+                &::before {
+                    top: -40px;
+                    left: -60px;
+                }
+
+                &::after {
+                    right: -60px;
+                    bottom: -40px;
+                }
+            }
+
+        }
+    }
+}
+
+
+$authentication-1-inner-max-width: 300px !default;
+$authentication-2-inner-max-width: 380px !default;
+$authentication-4-inner-max-width: 800px !default;
+
+.authentication-wrapper {
+  display: flex;
+  flex-basis: 100%;
+  min-height: 100vh;
+  width: 100%;
+
+  .authentication-inner {
+    width: 100%;
+  }
+
+  &.authentication-1,
+  &.authentication-2,
+  &.authentication-4 {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.authentication-1 .authentication-inner {
+    max-width: $authentication-1-inner-max-width;
+  }
+
+  &.authentication-2 .authentication-inner {
+    max-width: $authentication-2-inner-max-width;
+  }
+
+  &.authentication-3 {
+    align-items: stretch;
+    justify-content: stretch;
+
+    .authentication-inner {
+      display: flex;
+      align-items: stretch;
+      flex-wrap: nowrap;
+      justify-content: stretch;
+    }
+  }
+
+  &.authentication-4 .authentication-inner {
+    max-width: $authentication-4-inner-max-width;
+  }
+
+  // IE 10-11 fix
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    &::after {
+      content: '';
+      display: block;
+      flex: 0 0 0%;
+      min-height: inherit;
+      width: 0;
+      font-size: 0;
+    }
+  }
+}
+

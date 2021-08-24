@@ -1,0 +1,179 @@
+* {
+    scrollbar-width: thin;
+    scrollbar-color: red;
+  }
+  
+  .custom-login {
+    background: #f7f0eb;
+  }
+  .custom-login a {
+    color: #68b8bd;
+  }
+  .custom-login a:hover {
+    color: #8dd4da;
+  }
+  .custom-login .authentication-wrapper {
+    position: relative;
+    padding: 3%;
+    height: 100vh;
+  }
+  .custom-login .authentication-wrapper::before {
+    position: absolute;
+    content: "";
+    background: url(../img/login/leaf.png) center center no-repeat;
+    background-size: cover;
+    z-index: 2;
+    width: 20%;
+    height: 36%;
+  }
+  .custom-login .authentication-wrapper::before {
+    left: -10%;
+    bottom: 10%;
+  }
+  .custom-login .authentication-wrapper .leaf {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+  }
+  .custom-login .authentication-wrapper .leaf::before, .custom-login .authentication-wrapper .leaf::after {
+    position: absolute;
+    content: "";
+    background: url(../img/login/leaf.png) center center no-repeat;
+    background-size: cover;
+    z-index: 2;
+    width: 20%;
+    height: 36%;
+  }
+  .custom-login .authentication-wrapper .leaf::before {
+    left: 45%;
+    top: -20%;
+    transform: scaleY(-1);
+  }
+  .custom-login .authentication-wrapper .leaf::after {
+    right: -10%;
+    bottom: -10%;
+    transform: scaleX(-1);
+  }
+  .custom-login .authentication-wrapper .authentication-inner {
+    position: relative;
+    background: #045257;
+    overflow: hidden;
+    box-shadow: 0px 60px 70px -25px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+  }
+  .custom-login .authentication-wrapper .authentication-inner .theme-bg-white {
+    background-color: #045257 !important;
+  }
+  .custom-login .authentication-wrapper .authentication-inner .ui-bg-cover .ui-bg-overlay {
+    background-image: linear-gradient(200deg, #0a5523 0%, #052b11 100%) !important;
+  }
+  .custom-login .authentication-wrapper .authentication-inner .ui-bg-cover .ui-bg-text {
+    position: relative;
+  }
+  .custom-login .authentication-wrapper .authentication-inner .ui-bg-cover .ui-bg-text::before, .custom-login .authentication-wrapper .authentication-inner .ui-bg-cover .ui-bg-text::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 150px;
+    left: 0;
+  }
+  .custom-login .authentication-wrapper .authentication-inner .ui-bg-cover .ui-bg-text::before {
+    background: url(../img/login/line-top.png) center center no-repeat;
+    bottom: 100%;
+  }
+  .custom-login .authentication-wrapper .authentication-inner .ui-bg-cover .ui-bg-text::after {
+    background: url(../img/login/line-bottom.png) center center no-repeat;
+    top: 100%;
+  }
+  .custom-login .authentication-wrapper .authentication-inner .ui-bg-form {
+    position: relative;
+  }
+  .custom-login .authentication-wrapper .authentication-inner .ui-bg-form .form-control {
+    border-radius: 30px;
+  }
+  .custom-login .authentication-wrapper .authentication-inner .ui-bg-form .form-control:focus {
+    border-color: #f6efea;
+  }
+  .custom-login .authentication-wrapper .authentication-inner .ui-bg-form .box-4vm {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .custom-login .authentication-wrapper .authentication-inner .ui-bg-form .box-4vm a {
+    width: 100px;
+    margin-left: 10px;
+  }
+  .custom-login .authentication-wrapper .authentication-inner .ui-bg-form .box-4vm a img {
+    width: 100%;
+    height: auto;
+  }
+  .custom-login .authentication-wrapper .authentication-inner .btn-primary {
+    background: #fff;
+    color: #045257;
+    border-radius: 30px;
+  }
+  .custom-login .authentication-wrapper .authentication-inner .ui-form {
+    position: relative;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 1199.98px) {
+    .custom-login .authentication-wrapper::before {
+      width: 250px;
+      height: 250px;
+      left: -15%;
+    }
+    .custom-login .authentication-wrapper .leaf::before, .custom-login .authentication-wrapper .leaf::after {
+      width: 300px;
+      height: 300px;
+    }
+    .custom-login .authentication-wrapper .leaf::before {
+      left: 30%;
+    }
+    .custom-login .authentication-wrapper .leaf::after {
+      right: -15%;
+      bottom: -15%;
+    }
+    .custom-login .authentication-wrapper .authentication-inner .ui-bg-form .ui-form .w-75 {
+      width: 100% !important;
+    }
+  }
+  @media screen and (max-width: 991.98px) {
+    .custom-login .authentication-wrapper::before {
+      display: none;
+    }
+    .custom-login .authentication-wrapper .leaf::before, .custom-login .authentication-wrapper .leaf::after {
+      width: 300px;
+      height: 300px;
+    }
+    .custom-login .authentication-wrapper .leaf::before {
+      top: -15%;
+      left: -15%;
+    }
+    .custom-login .authentication-wrapper .leaf::after {
+      right: -15%;
+      bottom: -15%;
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    .custom-login .authentication-wrapper .leaf::before, .custom-login .authentication-wrapper .leaf::after {
+      width: 150px;
+      height: 150px;
+    }
+    .custom-login .authentication-wrapper .leaf::before {
+      top: -40px;
+      left: -60px;
+    }
+    .custom-login .authentication-wrapper .leaf::after {
+      right: -60px;
+      bottom: -40px;
+    }
+  }
+  
+  /*# sourceMappingURL=custom-login.css.map */
+  
