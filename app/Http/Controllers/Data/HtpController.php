@@ -27,8 +27,8 @@ class HtpController extends BaseController
             'tanggal' => 'required',
             'komoditi_id' => 'required',
             'htp' => 'required|numeric',
-            'lat' => 'required',
-            'long' => 'required',
+            'lat' => 'nullable',
+            'long' => 'nullable',
             'user_id' => 'required',
             'ket_file' => 'nullable',
         ]);

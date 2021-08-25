@@ -1085,10 +1085,10 @@ export default {
                 this.notif("danger", "Error", "Luas baku lahan harus lebih besar dari 0.");
                 return false;
             }
-            if (this.saveData.lat == null || this.saveData.long == null) {
-                this.notif("danger", "Error", "Anda belum menentukan titik lokasi.");
-                return false;
-            }
+            // if (this.saveData.lat == null || this.saveData.long == null) {
+            //     this.notif("danger", "Error", "Anda belum menentukan titik lokasi.");
+            //     return false;
+            // }
             return true;
         },
 

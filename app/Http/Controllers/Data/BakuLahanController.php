@@ -27,8 +27,8 @@ class BakuLahanController extends BaseController
             'tahun' => 'required',
             'jenis' => 'required',
             'luas_baku_lahan' => 'required|numeric',
-            'lat' => 'required',
-            'long' => 'required',
+            'lat' => 'nullable',
+            'long' => 'nullable',
             'user_id' => 'required',
             'ket_file' => 'nullable',
         ]);

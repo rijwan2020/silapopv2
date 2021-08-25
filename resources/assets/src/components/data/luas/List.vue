@@ -1318,10 +1318,10 @@ export default {
                 this.notif("danger", "Error", "Isi salah satu nilai antara Luas Tanam / Tambah Tanam / Produksi / Luas Panen.");
                 return false;
             }
-            if (this.saveData.lat == null || this.saveData.long == null) {
-                this.notif("danger", "Error", "Anda belum menentukan titik lokasi.");
-                return false;
-            }
+            // if (this.saveData.lat == null || this.saveData.long == null) {
+            //     this.notif("danger", "Error", "Anda belum menentukan titik lokasi.");
+            //     return false;
+            // }
             return true;
         },
 

@@ -28,8 +28,8 @@ class BakuLahanDetailController extends BaseController
             'jenis' => 'required',
             'rencana_tanam' => 'required|numeric',
             'realisasi_tanam' => 'required|numeric',
-            'lat' => 'required',
-            'long' => 'required',
+            'lat' => 'nullable',
+            'long' => 'nullable',
             'user_id' => 'required',
             'ket_file' => 'nullable',
         ]);

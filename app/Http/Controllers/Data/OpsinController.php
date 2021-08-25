@@ -27,8 +27,8 @@ class OpsinController extends BaseController
             'tahun' => 'required',
             'jenis_id' => 'required',
             'jumlah_alsin' => 'required|numeric',
-            'lat' => 'required',
-            'long' => 'required',
+            'lat' => 'nullable',
+            'long' => 'nullable',
             'user_id' => 'required',
             'ket_file' => 'nullable',
         ]);

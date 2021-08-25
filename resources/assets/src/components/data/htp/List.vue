@@ -1127,10 +1127,10 @@ export default {
                 this.notif("danger", "Error", "Harga tingkat petani tidak boleh kosong.");
                 return false;
             }
-            if (this.saveData.lat == null || this.saveData.long == null) {
-                this.notif("danger", "Error", "Anda belum menentukan titik lokasi.");
-                return false;
-            }
+            // if (this.saveData.lat == null || this.saveData.long == null) {
+            //     this.notif("danger", "Error", "Anda belum menentukan titik lokasi.");
+            //     return false;
+            // }
             return true;
         },
 

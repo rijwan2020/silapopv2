@@ -28,8 +28,8 @@ class OpsinDetailController extends BaseController
             'jenis_id' => 'required',
             'ltt_ltp' => 'required|numeric',
             'alsin' => 'required|numeric',
-            'lat' => 'required',
-            'long' => 'required',
+            'lat' => 'nullable',
+            'long' => 'nullable',
             'user_id' => 'required',
             'ket_file' => 'nullable',
         ]);

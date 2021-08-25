@@ -39,7 +39,7 @@
                     </template>
 
 					<template v-slot:cell(link)="data">
-                        <a :href="data.item.link" class="btn btn-sm btn-info" v-if="data.item.status==1" target="_blank"><i class="ion ion-md-download"></i> Download</a>
+                        <a :href="data.item.link" class="btn btn-sm btn-info" v-if="data.item.status==1"><i class="ion ion-md-download"></i> Download</a>
                         <i v-else>Belum tersedia</i>
                     </template>
 
