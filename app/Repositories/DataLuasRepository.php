@@ -105,8 +105,9 @@ class DataLuasRepository extends BaseRepository
         $request['hari'] = $tanggal->format('d');
         $request['bulan'] = $tanggal->format('m');
         $request['tahun'] = $tanggal->format('Y');
-
-        $user = $this->user->getOne($request['created_by']);
+        
+        $user = $this->user->getOne($request['insert_by']);
+        $request['created_by'] = $request['udpated_by'] = $request['insert_by'];
         $request['penyuluh_id'] = $user->penyuluh->id ?? 0;
 
         return $this->save($request);
@@ -155,7 +156,7 @@ class DataLuasRepository extends BaseRepository
     {
         $data = [
             'insert_by' => $request->created_by,
-            'update_by' => $request->updated_by,
+            'update_by' => $request->created_by,
             'insert_time' => $request->created_at,
             'update_time' => $request->updated_at,
             'tanggal' => $request->tanggal,
