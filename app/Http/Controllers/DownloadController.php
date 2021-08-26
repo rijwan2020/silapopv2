@@ -23,7 +23,8 @@ class DownloadController extends BaseController
                 'keterangan' => $value->keterangan,
                 'date' => $value->created_at->format('Y-m-d H:i:s'),
                 'status' => $value->status,
-                'link' => Storage::url($value->path)
+                // 'link' => Storage::url($value->path),
+                'link' => 'https://m.penyuluhjabar.id/storage' . $value->path
             ];
         }
         $this->output['data'] = $res;
