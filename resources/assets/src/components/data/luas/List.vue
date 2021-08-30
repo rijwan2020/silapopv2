@@ -1314,10 +1314,10 @@ export default {
                 this.notif("danger", "Error", "Komoditas belum dipilih.");
                 return false;
             }
-            if (this.saveData.luas_tanam <= 0 && this.saveData.luas_panen <= 0 && this.saveData.produksi <= 0 && this.saveData.tambah_tanam <= 0) {
-                this.notif("danger", "Error", "Isi salah satu nilai antara Luas Tanam / Tambah Tanam / Produksi / Luas Panen.");
-                return false;
-            }
+            // if (this.saveData.luas_tanam <= 0 && this.saveData.luas_panen <= 0 && this.saveData.produksi <= 0 && this.saveData.tambah_tanam <= 0) {
+            //     this.notif("danger", "Error", "Isi salah satu nilai antara Luas Tanam / Tambah Tanam / Produksi / Luas Panen.");
+            //     return false;
+            // }
             // if (this.saveData.lat == null || this.saveData.long == null) {
             //     this.notif("danger", "Error", "Anda belum menentukan titik lokasi.");
             //     return false;
