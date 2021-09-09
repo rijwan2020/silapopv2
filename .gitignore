@@ -9,6 +9,8 @@ Homestead.json
 Homestead.yaml
 .phpunit.result.cache
 .env.backup
+storage/
+package-lock.json
 
 # Vagrant
 /.vagrant
