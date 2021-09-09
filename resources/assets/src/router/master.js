@@ -75,5 +75,12 @@ export default [{
             name: 'desa',
             meta: { auth: true },
         },
+        {
+            path: 'korwil',
+            component: () =>
+                import ('@/components/master/korwil/List'),
+            name: 'korwil',
+            meta: { auth: true },
+        }
     ]
 }]
